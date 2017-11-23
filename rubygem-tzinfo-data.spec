@@ -1,21 +1,21 @@
-# Generated from tzinfo-data-1.2014.10.gem by gem2rpm -*- rpm-spec -*-
+# Generated from tzinfo-data-1.2017.3.gem by gem2rpm -*- rpm-spec -*-
 %global gem_name tzinfo-data
 
 Name: rubygem-%{gem_name}
-Version: 1.2017.2
+Version: 1.2017.3
 Release: 1%{?dist}
 Summary: Timezone Data for TZInfo
-Group: Development/Languages
 License: MIT
 URL: http://tzinfo.github.io
 Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
 BuildRequires: ruby(release)
-BuildRequires: rubygems-devel 
+BuildRequires: rubygems-devel
 BuildRequires: ruby >= 1.8.7
 BuildRequires: rubygem-minitest
 Requires: rubygem(tzinfo) >= 1.0.0
 BuildArch: noarch
-%if 0%{?fedora} <= 20 || 0%{?el7}
+
+%if 0%{?el7}
 Provides: rubygem(%{gem_name}) = %{version}
 %endif
 
@@ -26,7 +26,6 @@ modules for use with TZInfo.
 
 %package doc
 Summary: Documentation for %{name}
-Group: Documentation
 Requires: %{name} = %{version}-%{release}
 BuildArch: noarch
 
@@ -77,6 +76,9 @@ popd
 %doc %{gem_instdir}/.yardopts
 
 %changelog
+* Thu Nov 23 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.2017.3-1
+- update to 1.2017.3
+
 * Thu Jun 29 2017 Rich Megginson <rmeggins@redhat.com> - 1.2017.2-1
 - update to 1.2017.2
 
