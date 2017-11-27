@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_9cc9355d",
+        "filename": "rubygem-tzinfo-data.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-11-27T18:34:46Z",
+      "side": 1,
+      "message": "Is it necessary to use gem2rpm for an update to an existing spec file?  Why not just update the spec file directly?",
+      "revId": "394f7bda3f043a9da3f0d7c70b7ca07cc6319401",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
